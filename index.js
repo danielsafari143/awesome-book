@@ -2,6 +2,11 @@ import displayBooks from './modules/display.js';
 import localBooks from './modules/books.js';
 import adding from './modules/add.js';
 import './modules/remove.js';
+import dates from './modules/date.js';
+
+setInterval(() => {
+  dates();
+}, 1000);
 const books = [];
 displayBooks(localBooks(books));
 document.getElementById('add').addEventListener('click', () => {
