@@ -2,14 +2,11 @@ import displayBooks from './modules/display.js';
 import localBooks from './modules/books.js';
 import adding from './modules/add.js';
 import './modules/remove.js';
-
 const books = [];
-
 displayBooks(localBooks(books));
 document.getElementById('add').addEventListener('click', () => {
   adding(books, displayBooks, localBooks);
 });
-
 document.getElementById('bookInput').style.display = 'none';
 document.getElementById('contactInfo').style.display = 'none';
 

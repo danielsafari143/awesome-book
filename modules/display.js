@@ -1,4 +1,3 @@
-// import removeItem from "./remove.js";
 const displayBooks = (booksList) => {
   const booksContainer = document.getElementById('books');
   booksContainer.innerHTML = '';
